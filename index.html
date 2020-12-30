@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'>
+    <meta name="view-port" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="This is my website description">
+    <meta name="keywords" content="personal website, data analyst">
+    <!-- Do not index page -->
+    <meta name="robots" content="NOINDEX, NOFOLLOW">
+    <script src="https://kit.fontawesome.com/ee792cfb2a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+         $(document).ready(function(){
+             $(window).bind('scroll', function(){
+                 var navHeight = $(window).height()-90;
+                 if ($(window).scrollTop() > navHeight){
+                     $('#navbar').addClass('fixed');
+                 }
+                 else{
+                     $('#navbar').removeClass('fixed');
+                 }
+             });
+         });
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="shortcut icon" type='image/x-icon' href="favicon.ico">
+    <title>Kelsey Shi's Personal Website</title>
+</head>
+<body>
+    <!-- Headings -->
+    <section id="header">
+        <div class="landPage">
+                <!-- Logo -->
+                <div class='main-logo'>
+                    <img src="./img/Signature_white.png" class='img-logo'>
+                </div>
+                <div class="main-title">
+                    <h1>Hi! This is 
+                        <span class="txt-type" data-wait="3000" data-words='["Kelsey Shi!"]'></span>
+                    </h1>
+                    <h4>
+                    Welcome to my website.
+                    </h4>
+                </div>
+                <a href="./Shiyu_Shi_Resume.pdf" class="btn main-button">> View Resume</a>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a class='home' href="#">HOME</a></li>
+                <li><a class='about' href="#intro">ABOUT</a></li>
+                <li><a class='experience' href="#edu-experience">EXPERIENCE</a></li>
+                <li><a class='project' href="#projects">PROJECT</a></li>
+                <li><a class='vis' href="#visualization">VISUALIZATIZATION</a></li>
+                <li><a class='hobby' href="#invl">INVOLVEMENT</a></li>
+                <li><a class='contact' href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <div id="drop-nav">
+            <div class='nav-icon'><i class='fas fa-bars fa-2x'></i></div>
+            <div class='drop-down'>
+                <ul>
+                    <li class='home'><a href="#">HOME</a></li>
+                    <li><a class='about' href="#intro">ABOUT ME</a></li>
+                    <li class='experience'><a href="#edu-experience">EXPERIENCE</a></li>
+                    <li class='project'><a href="#projects">PROJECT</a></li>
+                    <li class='vis'><a href="#visualization">VISUALIZATION</a></li>
+                    <li><a class='hobby' href="#invl">INVOLVEMENT</a></li>
+                    <li class='contact'><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- HOME Nav -->
+    <div class="clr"></div>
+    <!-- About Me -->    
+    <!-- Introduction -->
+    <section id="intro">
+        <div class="container">
+            <div class="page-title">
+                <h2>A <span class='colored-text'></span>Data Enthusiast</h2>
+                <div class="page-sub-title">
+                    <p>2+ years of experiences with Python for ETL, Machine Learning and Deep Learning.</p>
+                    <p>2+ years experiences in analytics and BI using SQL and Tableau for business insights.</p>
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="flex-left">
+                    <img src='./img/selfie-yellow.png' alt='my selfie' class='img-self'/>
+                </div>
+                <div class="flex-right">
+                    <div class="intro-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse incidunt obcaecati, harum facilis dolor autem, quo tempora consequuntur reprehenderit ducimus doloribus quibusdam cupiditate praesentium, perferendis sed ex adipisci ea? Sed, perferendis? Corporis quisquam iusto voluptatem quibusdam sequi voluptatibus delectus quia laudantium unde incidunt, veniam necessitatibus soluta animi voluptate ipsum vel.</p>
+                    </div>
+                    <div class="flex-row">
+                        <div class="box-1">
+                            <p class="interest">
+                                <span class="intro-title">
+                                    Technical Interests  
+                                </span>
+                                <br>
+                                    >&nbsp;&nbsp;ETL (Extratc, Transform, Load)
+                                <br>
+                                    >&nbsp;&nbsp;Deep Learning 
+                                <br>
+                                    >&nbsp;&nbsp;Machine Learning
+                                <br>
+                                    >&nbsp;&nbsp;Visualization
+ 
+                            </p>
+                        </div>
+                        <div class='box-1'>
+                            <p class="interest">
+                                <span class="intro-title">
+                                    Business Interests
+                                </span>
+                                <br>
+                                    >&nbsp;&nbsp;Products & Marketing
+                                <br>
+                                    >&nbsp;&nbsp;Data Analysis
+                                <br>
+                                    >&nbsp;&nbsp;User Retention
+                                <br>
+                                    >&nbsp;&nbsp;Optimization Problem
+                            </p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <div class='page-title'>
+                    <h2>SKILLS</h2>
+            </div>
+            <div class='flex-row'>
+                <div class='col-1 col-sm-1'>
+                    <div class="featurette-icon"><i class="fas fa-database"></i></div>
+                    <h3>Database</h3>
+                    <p>&bullet;&nbsp;MySQL&nbsp;&nbsp;&bullet;&nbsp;Microsoft SQL Server
+                    <br>&bullet;&nbsp;PySQL</p>
+                    <br>
+                    <br>
+                </div>
+                <div class='col-1 col-sm-1'>
+                    <div class="featurette-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud Computing</h3>
+                    <p>&bullet;&nbsp;<a href="https://www.youracclaim.com/badges/116e3e67-2190-4626-8770-46d3200a2d13/public_url" style='text-decoration:underline;'>AWS Certified Solution Architect</a>:
+                    <br>
+                    EC2, S3, Lambda
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <div class='col-1 col-sm-1'>
+                    <div class="featurette-icon"><i class="fab fa-python"></i></div>
+                    <h3>Programming</h3>
+                    <p>&bullet;&nbsp;Python&nbsp;&nbsp;&bullet;&nbsp;R
+                    <br>&bullet;&nbsp;ETL</p>
+                    <br>
+                </div>
+                <div class='col-1 col-sm-1'>
+                    <div class="featurette-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Machine Learning</h3>
+                    <p>&bullet;&nbsp;Regression&nbsp;&nbsp;&bullet;&nbsp;Classification
+                    <br>&bullet;&nbsp;Predictive Modeling
+                    <br>&bullet;&nbsp;Natural Language Processing:
+                        <br>
+                        Sentiment Analysis, Topic Modeling</p>
+                </div>
+                <div class='col-1 col-sm-1'>
+                    <div class="featurette-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3>Deep Learning</h3>
+                    <p>&bullet;&nbsp;PySpark/Python: Keras; TensorFlow
+                    <br>&bullet;&nbsp;Neural Networks
+                    <br>&bullet;&nbsp;Image Recognition
+                    <br>&bullet;&nbsp;Natural Language Processing</p>
+                </div>
+                <div class='col-1 col-sm-1'>
+                    <div class="featurette-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Data Analytics</h3>
+                    <p>&bullet;&nbsp;A/B Testing
+                    <br>&bullet;&nbsp;Visualization: Tableau, 
+                        <br>Matplotlib, Seaborn, ggplot</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <!-- Education Experience -->
+    <section id="edu-experience">
+        <div class="container">
+            <div class="home-experience">
+                <div class='page-title'>
+                    <h2>EDUCATION</h2>
+                </div>
+                <!-- UMD -->
+                <div class="flex-row band1">
+                    <div class='hidden-image'>
+                        <div class="inline-left slide-show">
+                            <img src='./img/Slides/umd-1.jpg' alt='UMD' class='img-edu'>
+                            <img src='./img/Slides/umd-2.jpg' alt='UMD' class='img-edu'>
+                            <img src='./img/Slides/umd-3.jpg' alt='UMD' class='img-edu'>
+                            <img src='./img/Slides/umd-4.jpg' alt='UMD' class='img-edu'>    
+                        </div>
+                    </div>
+                    <div class="right-box">
+                        <div class="inline-right">
+                            <p class='third-title'>
+                                <a href="https://www.rhsmith.umd.edu" style="color:#333;">
+                                University of Maryland, Robert.H Smith Business School
+                                </a>
+                            </p>
+                            <hr style="border: none; border-bottom: 1px solid #555; margin: -15px 0px;">
+                            <div class='forth-title'>
+                                <p class='inline-left'>Master of Science in Business Analytics</p>
+                                <p class='inline-right'>Class of 2020</p>
+                            </div>
+                            <div class='block-course'>
+                                <p class='inline-left'>Courseworks:
+                                </p>
+                                <p class='inline-right'>Database Management System, Decision Analytics, Data Models and Decisions, Big Data and AI Business, Data Mining, Operations Analytics, Data Process Python, Web Analytics and Visualization.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SHUFE -->
+                <div class="flex-row band2">
+                    <div class='hidden-image'>
+                        <div class="inline-left">
+                            <img src='./img/Slides/sufe.jpg' class='img-edu'>
+                        </div>
+                    </div>
+                    <div class="right-box">
+                    <div class="inline-right">
+                        <a href="https://cob.sufe.edu.cn" style='color:#333;'> 
+                            <p class='third-title'>
+                                Shanghai University of Finance and Economics, Business School
+                            </p>
+                        </a>
+                        <hr style="border: none; border-bottom: 1px solid #555; margin: -15px 0px;">
+                        <div class='forth-title'>
+                            <p class='inline-left'>Bachelor in International Business</p>
+                            <p class='inline-right'>Class of 2019</p>
+                        </div>
+                        <div class='block-course'>
+                            <p class='inline-left'>Courseworks:
+                            </p>
+                            <p class='inline-right'>Computer Application in Business, Advanced Mathematics, Linear Algebra, Macroeconomics, Microeconomics, Management Science, Marketing, Corporate Finance, Investment. 
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Work Experience -->
+    <section id="work">
+        <div class='page-title'>
+            <h2>INTERSHIP EXPERIENCE</h2>
+        </div>
+        <div class="container">
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="timeline-content">
+                            <h4 class='date'>September 2020</h4>
+                            <p class='des'>
+                                <span class='third-title'>KidTalk</span> 
+                                <br>
+                                <span class='italic'>Marketing</span>
+                                <br>
+                                At KidTalk, I took charge of digital marketing campaign on facebook. As a scientific orgnization and a startup in marketing, KidTalk was struggling with recruiting new users and achieving a high retention rate.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h4 class='date'>December 2018</h4>
+                            <p class='des'>
+                                <span class='third-title'>NIKE Sports China Co. Ltd</span> 
+                                <br>
+                                <span class='italic'>HRBP Analyst</span>
+                                <br>
+                                I joined HRBP-global technology team that was more business-oriented. We’ve worked on internal analysis based on human resource database and main metrics that are related to certain business partners.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h4 class='date'>July 2018</h4>
+                            <p class='des'>
+                                <span class='third-title'>Industrial Bank</span> 
+                                <br>
+                                <span class='italic'>Summer Intern</span>
+                                <br>
+                                In this summer, I became a summer intern in asset management department, sorting and archiving financial transaction, assisting product contract drafting. Besides, I collected and analyzed daily financial data from Wind database.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h4 class='date'>December 2017</h4>
+                            <p class='des'>
+                                <span class='third-title'>China Merchants Securities</span> 
+                                <br>
+                                <span class='italic'>Institution Business Intern</span>
+                                <br>
+                                As an institution business intern, I mainly arranged daily events with three main institution clients, summaried research reports and presented information of recommended stocks.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Work Experience -->
+    <!-- <section id='work-experience'>
+        <div class="container-2">
+            <div class="home-experience">
+                <div class='page-title'>
+                    <h2>INTERSHIP EXPERIENCE</h2>
+                </div>
+                <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="work-card">
+                    <div class="work-avatar">
+                        <a href="https://www.kidtalkscrapbook.org">
+                        <img src="./img/kidtalk.png" alt="..." class="img-round">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="https://www.kidtalkscrapbook.org">
+                        <p class='third-title'>
+                            <strong>KidTalk Scraping Book</strong>
+                            <hr style="margin: -15px 0px;color: #555;">
+                        </p>
+                        <p class='forth-title'>
+                            <span class='inline-left'>Marketing Group</span>
+                            <span class='inline-right'>Sep '20 - Dec '20</span>
+                            <div class="clr"></div>
+                        </p>
+                        <p class='des'>
+                            At KidTalk, I took charge of digital marketing campaign on facebook. As a scientific orgnization and a startup in marketing, KidTalk was struggling with recruiting new users and achieving a high retention rate.
+                        </p>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+               
+                <div class="swiper-slide">
+                    <div class="work-card">
+                    <div class="work-avatar">
+                        <a href="http://www.nike.com/cn/">
+                        <img src="./img/nike.png" alt="..." class="img-round">
+                        </a>
+                    </div>
+                    <a href="https://www.nike.com/cn/">
+                    <div class="text">
+                        <p class='third-title'>
+                            <strong>NIKE Sports China Co. Ltd</strong>
+                            <hr style="margin: -15px 0px;color: #555;">
+                        </p>
+                        <p class='forth-title'>
+                            <span class='inline-left'>HRBP Analyst</span>
+                            <span class='inline-right'>Dec '18 - May '19</span>
+                            <div class="clr"></div>
+                        </p>
+                        <p class='des'>
+                            As a HRBP Intern, I utilized 
+                        </p>
+                    </div>
+                    </a>
+                    </div>
+                </div>
+               
+                <div class="swiper-slide">
+                    <div class="work-card">
+                    <a href="https://www.cib.com.cn/cn/index.html">
+                            <img src="./img/industrial.jpg" alt="..." class="img-round-1">
+                    <div class="text">
+                        <p class='third-title'>
+                            <strong>Industrial Bank</strong>
+                            <hr style="margin: -15px 0px;color: #555;">
+                        </p>
+                        <p class='forth-title'>
+                            <span class='inline-left'>Summer Intern</span>
+                            <span class='inline-right'> Jul'18 - Aug '19</span>
+                            <div class="clr"></div>
+                        </p>
+                        <p class='des'>
+                            As a HRBP Intern, I utilized 
+                        </p>
+                    </div>
+                    </a>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="work-card">
+                    <div class="work-avatar">
+                        <a href="http://www.newone.com.cn/">
+                            <img src="./img/securities.jpeg" alt="..." class="img-round-1">
+                        </a>
+                    </div>
+                    <a href="http://www.newone.com.cn/">
+                    <div class="text">
+                        <p class='third-title'>
+                            <strong>China Merchants Securities</strong>
+                            <hr style="margin: -15px 0px;color: #555;">
+                        </p>
+                        <p class='forth-title'>
+                            <span class='inline-left'>Institution Business Intern</span>
+                            <span class='inline-right'> Dec'17 - Apr '18</span>
+                            <div class="clr"></div>
+                        </p>
+                        <p class='des'>
+                            As a HRBP Intern, I utilized 
+                        </p> 
+                    </div>
+                    </a>
+                    </div>
+                </div>
+                
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- Project -->
+    <!-- Projects -->
+    <section id='projects'>
+        <div class="container">
+            <div class="home-project">
+                <div class='page-title'>
+                    <h2>PROJECTS</h2>
+                </div>
+                <div class= "flex-row">
+                    
+                    <div class='col-1 col-sm-1'>
+                        
+                        <a class='icon' href='https://github.com/kelsey-s/gross-prediction-nlp-analysis_IMDB_python'> 
+                            <div class="img-with-cover">
+                                <img src="./img/IMDB-icon.png" class='img-project'/>
+                            </div>
+                        </a>
+                        <h3>
+                            Predicting IMDB Gross Level
+                        </h3>
+                        <p>This project handled movies from IMDB and TMDB database and aimed to find out popular topics and predict expected movie gross based on related factors. </p>
+                         
+                    </div>
+                    <div class='col-1 col-sm-1'>
+                        <a class='icon' href='https://github.com/kelsey-s/predictivemodeling_airbnb_R'> 
+                            <div class="img-with-cover">   
+                                <img src="./img/airbnb-icon.jpg" class='img-project'/>
+                            </div>
+                        </a>
+                        <h3>
+                            Airbnb High Rating Prediction
+                        </h3>
+                        <p>By seperately applying Logistic Regression, Boosting, RandomForest etc. classification methods with PCA, this projects reached an accuracy of 84.66% in airbnb high rate prediction.</p>
+                    </div>
+                    <div class='col-1 col-sm-1'>
+                        <a class='icon' href='https://github.com/kelsey-s/databricks-capstone-project'> 
+                            <div class="img-with-cover">
+                                <img src="./img/spark-icon.png" class='img-project'/>
+                            </div>
+                        </a>
+                        <h3>
+                            ETL with PySpark on Mock Data
+                        </h3>
+                        <p>A wholistic summary of ETL (Extract, Transform, Load) process and pipeline on twitter hashtag data streaming by Pyspark and PySQL.</p>
+                    </div>
+                    <div class='col-1 col-sm-1'>
+                        <a class='icon' href='https://github.com/kelsey-s/restaurant_database_recommendationsystem_sql'> 
+                            <div class="img-with-cover">
+                                <img src="./img/DB-icon.png" class='img-project'/>
+                            </div>
+                        </a>
+                        <h3>
+                            Restaurant DB Management & Recommendation
+                        </h3>
+                        <p>Isn't is cool to build your own database and create an interactive interface? This project defined inserted data into the restaurant database and allowed customer to check the most popular restaurants with different needs.</p>
+                    </div>
+                    <div class='col-1 col-sm-1'>
+                        <a class='icon' href='https://github.com/kelsey-s/Deloitte_covid-19-tweets-analysis_python'> 
+                            <div class="img-with-cover">
+                                <img src="./img/covid-icon.jpg" class='img-project'/>
+                            </div>
+                        </a>
+                        <h3>
+                            Deloitte Sponsored Covid-19 Tweets Analysis
+                        </h3>
+                        <p>Curious about how topic about Covid-19 varies geographically? Check out this Python script that compares the popular twitter topic words frequency for each state and tells you the tweets sentiment bias across US regarding Coronavirus.</p>
+                    </div>
+                    <div class='col-1 col-sm-1'>
+                            <a class='icon' href='https://github.com/kelsey-s/stock-price-prediction_trade-simulation_python'> 
+                                <div class="img-with-cover">
+                                    <img src="./img/Stock-icon.jpg" class='img-project'/>
+                                </div>
+                            </a>
+                            <h3>
+                                Stock Price Prediction and Simulation
+                            </h3>
+                            <p>This project utilized simple regression, multiple machine learning and deep learning algorithms, basing on which it compared performance of different methods in predicting stock price. </p>
+                    </div>
+                    
+                   
+                </div>
+            <div class="button">
+                <a href="https://github.com/kelsey-s">    
+                    <button class='btn-2'>
+                        <span><strong>>&nbsp&nbsp&nbspMORE PROJECTS</strong></span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Visualization -->
+    <section id="visualization">
+        <div class="container">
+            <div class="home-hobbies">
+                <div class='page-title'>
+                    <h2>VISUALIZATION</h2>
+                </div>
+                <div class= "flex-row">
+                    <div class='col1 col-sm-1'>
+                        <div class= 'highlight'>
+                            <a class='icon' href='https://public.tableau.com/views/Book1_16052104391880/TeachingPerformanceAnalysis?:language=en&:display_count=y&:origin=viz_share_link'> 
+                                <img src="./img/vis1.png" class="img-vis"/>
+                            </a>
+                            <h3>
+                                Teaching Performance Analysis
+                            </h3>
+                            <p>Want to understand how a particular professor's teaching performance compares to others? From this dashboard, we can say that this Professor has a relatively high overall performance based on a stable rating and increasing number of enrolled students.</p>
+                        </div>  
+                    </div>
+                    <div class='col1 col-sm-1'>
+                        <div class= 'highlight'>
+                            <a class='icon' href='https://public.tableau.com/views/NorthAmericaInternetUseAnalysis/NorthAmericaInternetUseBasedonDifferentMetrics?:language=en&:display_count=y&:origin=viz_share_link'> 
+                                <img src="./img/vis2.png" class="img-vis"/>
+                            </a>
+                            <h3>
+                                An uneven story of Internet Use
+                            </h3>
+                            <p>As a percent of population, Bermuda leads North  American countries based on both measuring metrics. Aruba ranks high based on max Internet use but has a low average Internet use, which shows a fast growth of Internet development in Aruba.</p>
+                            </div>  
+                    </div>
+                    <div class='col1 col-sm-1 hidden-col'>
+                        <div class= 'highlight'>
+                            <a class='icon' href='https://public.tableau.com/views/758D_Assignment3_Shiyu/AirbnbDashboard?:language=en&:display_count=y&:origin=viz_share_link'> 
+                                <img src="./img/vis3.JPG" class="img-vis"/>
+                            </a>
+                            <h3>
+                                Airbnb Neighborhood in Washington DC
+                            </h3>
+                            <p>This dynamic dashboard shows geographical location, number of different room type and several relevant metrics for specific neighborhood in Washington DC.</p>
+                            </div>  
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="https://github.com/kelsey-s">    
+                        <button class='btn-2'>
+                            <span><strong>>&nbsp&nbsp&nbspMORE TABLEAU</strong></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- FUN INVOLVEMENT -->
+   <section id="invl">
+        <div class="arrow-right"></div>
+        <div class="circle"></div>
+        <div class="container">
+            <div class="home-invl">
+                <div class='page-title'>
+                    <h2>FUN INVOLVEMENT </h2>
+                </div>
+                <div class="card-stack">
+                    <div class="stack-item stack-bottom stack-bottom-left">
+                        <img src="./img/prd3.png" alt="PRD">
+                        <div class='text stack-text-bottom-left'>
+                            <h3>SUFE PR Department</h3>
+                            <p>
+                            Public Relation Department facilitates groups within the student union of SUFE by drafting sponsorship plans for campus activities. We also provide support, strength, and friendship for students seeking social activities, networking with people with different background.  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stack-item stack-top">
+                        <img src="./img/Screen Shot 2020-12-24 at 9.12.17 PM.png" alt="CHIDS">
+                        <div class='text stack-text-top'>
+                            <h3>CHIDS Research Volunteer</h3>
+                            <p>Center for Health Information and Decision Systems (CHIDS) aims to develop analytics-driven healthcare insights that will be leveraged as material for a healthcare educational program.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stack-item stack-bottom stack-bottom-right">
+                        <img src="./img/aero1.JPG" alt="Aerobatic">
+                        <div class='text stack-text-bottom-right'>
+                            <h3>Aerobatic Team of SUFE</h3>
+                            <p>
+                            As a sport team of SUFE, our mission is to compete at the college level in participate aerobatic competitions around China at National Aerobatic Club sanctioned events.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class='flex-row'>
+                <div class="gallery">
+                    <div class="gallery-show">
+                        <img class='img-gallery' src="./img/Gallery/g0.JPG" alt="Photography">
+                        <img class='img-gallery' src="./img/Gallery/g1.JPG" alt="Photography">
+                        <img class='img-gallery' src="./img/Gallery/g2.JPG" alt="Photography">
+                        <img class='img-gallery' src="./img/Gallery/g3.JPG" alt="Photography">
+                        <img class='img-gallery' src="./img/Gallery/g4.JPG" alt="Photography">
+                        <img class='img-gallery' src="./img/Gallery/g5.JPG" alt="Photography">
+                        <img class='img-gallery' src="./img/Gallery/g6.JPG" alt="Photography">
+                        <img class='img-gallery' src="./img/Gallery/g7.JPG" alt="Photography">
+                        <img class='img-gallery' src="./img/Gallery/g8.JPG" alt="Photography">
+                        <img class='img-gallery' src="./img/Gallery/g9.JPG" alt="Photography">
+                        <img class='img-gallery' src="./img/Gallery/g10.JPG" alt="Photography">
+                        <img class='img-gallery' src="./img/Gallery/g11.JPG" alt="Photography">
+                        <img class='img-gallery' src="./img/Gallery/g12.JPG" alt="Photography">
+                        <img class='img-gallery' src="./img/Gallery/g14.JPG" alt="Photography">
+                    </div>
+                </div>
+                <div class='column'>
+                    <div class="column2">
+                        <h2>Let's talk!</h2>
+                        <form action='subbit.php' method="POST" data-netlify='true' data-netlify-recaptcha='true' class='callback-form'>
+                            <div class='form-control'>
+                                <label for="name">Name
+                                    <span class="required" aria-hidden="true">*</span>
+                                </label>
+                                <input type="text" id='name' name='name' required='true' aria-required="true">
+                            </div>
+                            <div class='form-control'>
+                                <label for="email"> Email
+                                    <span class="required" aria-hidden="true">*</span>
+                                </label>
+                                <input type="email" id='email' name='email' required='true' aria-required="true">
+                            </div>
+                            <div class='form-control'>
+                                <label for="message">Message
+                                    <span class="required" aria-hidden="true">*</span>
+                                </label>
+                                <textarea id='message' name='message' rows='9' required='true' aria-required="true"></textarea>
+                            </div>
+                            <div class="my-2">
+                                <div data-netlify-recaptcha="true"></div>
+                            </div>
+                            <input type='submit' value='Send' id='submit' class='btn'>
+                        </form>
+                        <p class='hidden-form-text'>I've got your message and will reach back ASAP! :)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="social">
+                <div class="icon--wrapper">
+                    <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook fa-3x"></i>
+                    </a>
+                </div>
+                <div class="icon--wrapper">
+                    <a href="https://www.github.com/kelsey-s" >
+                    <i class="fab fa-github fa-3x"></i>
+                    </a>
+                </div>
+                <div class="icon--wrapper">
+                    <a href="https://www.linkedin.com/in/kelsey-shi">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </a>
+                </div>
+                <div class="icon--wrapper">
+                    <a href="mailto:shiyu.shi@marylandsmith.umd.edu">
+                        <i class="far fa-envelope fa-3x"></i>
+                    </a>
+                 </div>  
+            </div>
+            
+            <hr class='footer-line'>
+            
+        </div>
+    </section>
+     <!-- HOME Section -->
+     <!-- <section id="main-page">
+        <div class='home-main'>
+            <div class='large-block'>
+                <div class='row'>
+                    <div class='small-block'>
+                        <a href="./intro-website.html">
+                           
+                        <img src="https://source.unsplash.com/collection/190727/400x300" alt="" style="widows: 300px;height:200px;">
+                        </a>
+                    </div>
+                    <div class='small-block'>
+                        <a href="./experience-website.html">
+                            
+                        <img src="https://source.unsplash.com/collection/190727/400x300" alt="" style="widows: 300px;height:200px;">
+                        </a>
+                    </div>
+                    <div class='small-block'>
+                        <a href="./project-website.html">
+                          
+                        <img src="https://source.unsplash.com/collection/190727/400x300" alt="" style="widows: 300px;height:200px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="large-block">
+                <div class="row">
+                    <div class='small-block'>
+                        <a href="./vis-website.html">
+                            
+                        <img src="https://source.unsplash.com/collection/190727/400x300" alt="" style="widows: 300px;height:200px;">
+                        </a>
+                    </div>
+                    <div class='small-block'>
+                        <a href="./photo-website.html">
+                           
+                        <img src="https://source.unsplash.com/collection/190727/400x300" alt="" style="widows: 300px;height:200px;">
+                        </a>
+                    </div>
+                    <div class='small-block'>
+                        <a href="./hobby-website.html">
+                        
+                        <img src="https://source.unsplash.com/collection/190727/400x300" alt="" style="widows: 300px;height:200px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section> -->
+     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     <script>
+        var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: -8,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        mousewheel: {
+            forceToAxis: true,
+        },
+        keyboard: true,
+        pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        breakpoints: {
+            1024: {
+                slidesPerView: 1,
+                spaceBetween: -8
+            },
+            768: {
+                slidesPerView: 1    ,
+                spaceBetween: 0
+            },
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            },
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            }
+        }})
+    </script> -->
+
+    <script>
+        let dropdownBtn = document.querySelector('.nav-icon');
+        let menuContent = document.querySelector('.drop-down');
+        dropdownBtn.addEventListener('click',()=>{
+            if(menuContent.style.display===""){
+                    menuContent.style.display="block";
+            } else {
+                    menuContent.style.display="";
+            }
+        })
+    </script>
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+        
+        $(function(){
+            $('.slide-show img:gt(0)').hide();
+            setInterval(function(){
+            $('.slide-show :first-child').fadeOut()
+                .next('img').fadeIn()
+                .end().appendTo('.slide-show');}, 
+            3000);
+        }); 
+        $(function(){
+            $('.gallery-show img:gt(0)').hide();
+            setInterval(function(){
+            $('.gallery-show :first-child').fadeOut()
+                .next('img').fadeIn()
+                .end().appendTo('.gallery-show');}, 
+            3000);
+        });
+    </script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script>
+        $(window).scroll(function(){
+            var scr = $(window).scrollTop();
+            var windowHeight = $(window).height();  
+            $('.timeline li').each(function(){
+                var TopElmWindow = $(this).offset().top - scr;
+                var BotElmWindow = windowHeight - TopElmWindow;
+                if(BotElmWindow >= $(this).height()){
+                $(this).addClass('in-view');
+                }
+            })
+        })
+    </script>
+    <script src="./script/type-effect.js"></script>
+</body>
+</html>
