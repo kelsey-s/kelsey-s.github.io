@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset='UTF-8'>
-    <meta name="view-port" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta name="view-port" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="This is my website description">
     <meta name="keywords" content="personal website, data analyst">
@@ -241,7 +241,7 @@
                     <div class="inline-right">
                         <a href="https://cob.sufe.edu.cn" style='color:#333;'> 
                             <p class='third-title'>
-                                Shanghai University of Finance and Economics, Business School
+                                Shanghai University of Finance and Economics<span class='hidden-uni'>, Business School</span>
                             </p>
                         </a>
                         <hr style="border: none; border-bottom: 1px solid #555; margin: -15px 0px;">
@@ -600,7 +600,7 @@
                 </div>
                 <div class="card-stack">
                     <div class="stack-item stack-bottom stack-bottom-left">
-                        <img src="./img/prd3.png" alt="PRD">
+                        <img src="./img/prd3.png" alt="PRD" class='img-fun'>
                         <div class='text stack-text-bottom-left'>
                             <h3>SUFE PR Department</h3>
                             <p>
@@ -609,7 +609,7 @@
                         </div>
                     </div>
                     <div class="stack-item stack-top">
-                        <img src="./img/Screen Shot 2020-12-24 at 9.12.17 PM.png" alt="CHIDS">
+                        <img src="./img/Screen Shot 2020-12-24 at 9.12.17 PM.png" alt="CHIDS" class='img-fun'>
                         <div class='text stack-text-top'>
                             <h3>CHIDS Research Volunteer</h3>
                             <p>Center for Health Information and Decision Systems (CHIDS) aims to develop analytics-driven healthcare insights that will be leveraged as material for a healthcare educational program.
@@ -617,7 +617,7 @@
                         </div>
                     </div>
                     <div class="stack-item stack-bottom stack-bottom-right">
-                        <img src="./img/aero1.JPG" alt="Aerobatic">
+                        <img src="./img/aero1.JPG" alt="Aerobatic" class='img-fun'>
                         <div class='text stack-text-bottom-right'>
                             <h3>Aerobatic Team of SUFE</h3>
                             <p>
@@ -642,7 +642,7 @@
                         <img class='img-gallery' src="./img/Gallery/g4.JPG" alt="Photography">
                         <img class='img-gallery' src="./img/Gallery/g5.JPG" alt="Photography">
                         <img class='img-gallery' src="./img/Gallery/g6.JPG" alt="Photography">
-                        <img class='img-gallery' src="./img/Gallery/g7.JPG" alt="Photography">
+                        <img class='img-gallery' src="./img/Gallery/g7.jpg" alt="Photography">
                         <img class='img-gallery' src="./img/Gallery/g8.JPG" alt="Photography">
                         <img class='img-gallery' src="./img/Gallery/g9.JPG" alt="Photography">
                         <img class='img-gallery' src="./img/Gallery/g10.JPG" alt="Photography">
@@ -653,8 +653,9 @@
                 </div>
                 <div class='column'>
                     <div class="column2">
-                        <h2>Let's talk!</h2>
-                        <form action='subbit.php' method="POST" data-netlify='true' data-netlify-recaptcha='true' class='callback-form'>
+                        <h2>Let's talk!</h2> 
+                        <!-- data-netlify='true' data-netlify-recaptcha='true' -->
+                        <form action='submit.php' method="POST"  class='callback-form'>
                             <div class='form-control'>
                                 <label for="name">Name
                                     <span class="required" aria-hidden="true">*</span>
@@ -673,9 +674,9 @@
                                 </label>
                                 <textarea id='message' name='message' rows='9' required='true' aria-required="true"></textarea>
                             </div>
-                            <div class="my-2">
+                            <!-- <div class="my-2">
                                 <div data-netlify-recaptcha="true"></div>
-                            </div>
+                            </div> -->
                             <input type='submit' value='Send' id='submit' class='btn'>
                         </form>
                         <p class='hidden-form-text'>I've got your message and will reach back ASAP! :)</p>
