@@ -1694,13 +1694,16 @@ p{
 	.stack-top::after{
 		height: 400px;
 		width: 250px;
+		background-color: rgba(0,0,0,0.7);
 	}
 	.stack-bottom::after{
 		height: 400px;
 		width: 250px;
+		background-color: rgba(0,0,0,0.7);
 	}
 
 	.text{
+		opacity:1;
 		margin-top: -1%;
 	}
 
