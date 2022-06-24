@@ -13,4 +13,4 @@
     
     header('Location: https://www.google.com/?client=safari');
   }
-?>
+
