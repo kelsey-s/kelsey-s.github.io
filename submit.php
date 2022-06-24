@@ -10,5 +10,5 @@
         // More headers
         mail($to, $subject, $msg, "From:" . $email_id);
         
-        header('Location: http://www.kelseysyshi.com/success.html');
+        header('Location: https://kelsey-s.github.io/portfolio/success.html');
     }
